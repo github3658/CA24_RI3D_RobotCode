@@ -173,7 +173,7 @@ public class Drivetrain extends Subsystem {
         this::getCurrentSpeeds, // Current ChassisSpeeds supplier
         this::drive, // Method that will drive the robot given ChassisSpeeds
         new ReplanningConfig(), // Default path replanning config. See the API for the options here
-        this // Reference to this subsystem to set requirements
+        null, this // Reference to this subsystem to set requirements
     );
 
     mSysIdRoutine = new SysIdRoutine(
